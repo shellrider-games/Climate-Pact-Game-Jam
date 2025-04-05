@@ -31,4 +31,9 @@ public class RecipeManager : MonoBehaviour
         }
         return possibleRecipes;
     }
+
+    public Recipe GetRandomRecipe()
+    {
+        return recipes[Random.Range(0, recipes.Count)];
+    }
 }
