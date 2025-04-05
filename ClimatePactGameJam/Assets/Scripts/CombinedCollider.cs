@@ -21,12 +21,17 @@ public class CombinedCollider : MonoBehaviour
         {
             if (child.TryGetComponent(out Collider c))
             {
+                c.enabled = true;
                 if (!firstColliderFound)
                 {
                     combinedBounds = c.bounds;
+                    firstColliderFound = true;
                 }
-                firstColliderFound = true;
-                combinedBounds.Encapsulate(c.bounds);
+                else
+                {
+                    combinedBounds.Encapsulate(c.bounds);                    
+                }
+                c.enabled = false;
             }
         }
 
