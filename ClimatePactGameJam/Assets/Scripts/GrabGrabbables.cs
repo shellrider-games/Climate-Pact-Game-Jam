@@ -21,6 +21,11 @@ public class GrabGrabbables : MonoBehaviour
         }
     }
 
+    public void Grab(GameObject go)
+    {
+        grabbedObject = go;
+    }
+
     private void TryGrab()
     {
         Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
