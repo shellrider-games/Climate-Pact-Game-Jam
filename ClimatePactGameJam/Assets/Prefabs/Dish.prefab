@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689ffad9c92d540918098d885ac69e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientGap: 0.02
   OnIngredientAdded:
     m_PersistentCalls:
       m_Calls:

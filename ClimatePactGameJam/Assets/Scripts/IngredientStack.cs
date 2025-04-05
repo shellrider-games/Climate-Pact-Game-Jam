@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class IngredientStack : MonoBehaviour
 {
-    
+    [SerializeField] private float ingredientGap;
     [SerializeField] private UnityEvent OnIngredientAdded;
     List<string> ingredientsInStack = new List<string>();
     private RecipeManager recipeManager;
@@ -40,7 +40,7 @@ public class IngredientStack : MonoBehaviour
         }
         ingredientsInStack.Add(ingredient.Name);
         ingredient.transform.SetParent(transform);
-        ingredient.transform.localPosition = Vector3.zero + Vector3.up * ingredientsInStack.Count * 0.01f;
+        ingredient.transform.localPosition = Vector3.zero + Vector3.up * ingredientsInStack.Count * ingredientGap;
         OnIngredientAdded.Invoke();
         if(ingredient.gameObject.TryGetComponent(out Collider collider))
         {
