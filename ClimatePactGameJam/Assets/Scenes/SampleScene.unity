@@ -953,6 +953,7 @@ GameObject:
   - component: {fileID: 1384201336}
   - component: {fileID: 1384201337}
   - component: {fileID: 1384201338}
+  - component: {fileID: 1384201339}
   m_Layer: 6
   m_Name: InputHandling
   m_TagString: Untagged
@@ -1004,6 +1005,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1384201338}
         m_TargetAssemblyTypeName: GrabGrabbables, Assembly-CSharp
+        m_MethodName: OnMainInteract
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1384201339}
+        m_TargetAssemblyTypeName: InteractWithSpawner, Assembly-CSharp
         m_MethodName: OnMainInteract
         m_Mode: 0
         m_Arguments:
@@ -1077,6 +1090,18 @@ MonoBehaviour:
   hoverableLayerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1384201339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384201335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b615a75bd194784b465a7a43ab664b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081518187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,37 +1113,15 @@ GameObject:
   - component: {fileID: 2081518191}
   - component: {fileID: 2081518190}
   - component: {fileID: 2081518189}
-  - component: {fileID: 2081518188}
+  - component: {fileID: 2081518192}
+  - component: {fileID: 2081518193}
   m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
+  m_Name: StackOfPlates
+  m_TagString: ClickSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &2081518188
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081518187}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &2081518189
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1181,12 +1184,46 @@ Transform:
   m_GameObject: {fileID: 2081518187}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.258, y: 0.411, z: -0.242}
+  m_LocalPosition: {x: 0.617, y: 0.411, z: -0.242}
   m_LocalScale: {x: 0.30173, y: 0.012650633, z: 0.30173}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081518192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081518187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34dcf7508c784422e80f35289ad1eb43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToSpawn: {fileID: 5316156605294065867, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
+--- !u!65 &2081518193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081518187}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2.0000002, z: 1.0000001}
+  m_Center: {x: 0.00000005960464, y: 0, z: -0.00000008940696}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
