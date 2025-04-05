@@ -37,15 +37,22 @@ public class GrabGrabbables : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
-            if (hit.collider.gameObject.CompareTag("Grabbable"))
+            if (hit.collider.gameObject.CompareTag("Grabbable") || hit.collider.gameObject.CompareTag("Ingredient"))
             {
+                if (hit.collider.gameObject.CompareTag("Ingredient"))
+                {
+                    if (hit.collider.gameObject.TryGetComponent(out Ingredient ingredient) && !ingredient.CanBeGrabbed)
+                    {
+                        return;
+                    }
+                }
                 grabbedObject = hit.collider.gameObject;
                 grabSuccesfull.Invoke();
             }
         }
     }
 
-    private void TryRelease()
+    public void TryRelease()
     {
         if (grabbedObject != null)
         {
