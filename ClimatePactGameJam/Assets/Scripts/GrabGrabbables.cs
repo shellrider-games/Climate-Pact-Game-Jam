@@ -39,7 +39,7 @@ public class GrabGrabbables : MonoBehaviour
         }
     }
 
-    private void TryRelease()
+    public void TryRelease()
     {
         grabbedObject = null;
     } 

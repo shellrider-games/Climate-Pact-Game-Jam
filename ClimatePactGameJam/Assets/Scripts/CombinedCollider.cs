@@ -12,7 +12,7 @@ public class CombinedCollider : MonoBehaviour
         UpdateCombinedCollider();
     }
 
-    private void UpdateCombinedCollider()
+    public void UpdateCombinedCollider()
     {
         Bounds combinedBounds = new Bounds();
 

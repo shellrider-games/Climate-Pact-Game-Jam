@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7644284692001690042}
   - component: {fileID: 6113666937755729002}
   - component: {fileID: 1214543842024777781}
+  - component: {fileID: 521273377876071487}
   m_Layer: 0
   m_Name: Dish
   m_TagString: Grabbable
@@ -32,7 +33,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2758166004926255312}
+  - {fileID: 7691692884913343386}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7644284692001690042
@@ -95,7 +96,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1742156842e114f42bb8ffe6bb912681, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &9215017839840367102
+--- !u!114 &521273377876071487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438446102574755418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ffad9c92d540918098d885ac69e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeManager: {fileID: 0}
+  OnIngredientAdded:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1214543842024777781}
+        m_TargetAssemblyTypeName: CombinedCollider, Assembly-CSharp
+        m_MethodName: UpdateCombinedCollider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &3682477016449960628
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -106,10 +135,6 @@ PrefabInstance:
     - target: {fileID: 5316156605294065867, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
       propertyPath: m_Name
       value: Plate
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316156605294065867, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6459473277367779630, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
       propertyPath: m_LocalPosition.x
@@ -156,8 +181,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
---- !u!4 &2758166004926255312 stripped
+--- !u!4 &7691692884913343386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6459473277367779630, guid: 1f126e1df16844e4e8349348ca6eb590, type: 3}
-  m_PrefabInstance: {fileID: 9215017839840367102}
+  m_PrefabInstance: {fileID: 3682477016449960628}
   m_PrefabAsset: {fileID: 0}

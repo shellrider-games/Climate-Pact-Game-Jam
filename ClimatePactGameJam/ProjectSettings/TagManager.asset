@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grabbable
   - ClickSpawner
+  - Ingredient
   layers:
   - Default
   - TransparentFX
