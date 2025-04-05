@@ -16,19 +16,24 @@ public class ObjectAppearing : MonoBehaviour
 
     void Update()
     {
-        print("obj status:" + Order.activeSelf);
         TimePassed += Time.deltaTime;
         if ((TimePassed > Delay + DelayOffset) && Order.activeSelf == false)
         {
             Appear();
             DelayOffset = Random.Range(0, 3);
-            TimePassed = 0;
         }
     }
 
     private void Appear()
     {
-        print("Appear called");
         Order.SetActive(true);
+        print("Object: " + Order + "status: " + Order.activeSelf);
+    }
+
+    public void Disappear()
+    {
+        Order.SetActive(false);
+        TimePassed = 0;
+        print("Object: " + Order + "status: " + Order.activeSelf);
     }
 }

@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timeRemaining = maxTime;
-        
     }
 
     void Update()
@@ -27,7 +26,7 @@ public class Timer : MonoBehaviour
         {
             // disappearing of timer and order
             TimeOver.Invoke();
-            
+            timeRemaining = maxTime;
         }
     }
 }
