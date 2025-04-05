@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class GrabGrabbables : MonoBehaviour
@@ -7,6 +8,10 @@ public class GrabGrabbables : MonoBehaviour
     [SerializeField] private float hoverHeight = 0.1f;
     [SerializeField] private LayerMask hoverableLayerMask;
     private GameObject grabbedObject;
+    [SerializeField]
+    public UnityEvent grabSuccesfull = new UnityEvent();
+    [SerializeField]
+    public UnityEvent grabReleased = new UnityEvent();
 
     public void OnMainInteract(InputAction.CallbackContext context)
     {
@@ -35,12 +40,17 @@ public class GrabGrabbables : MonoBehaviour
             if (hit.collider.gameObject.CompareTag("Grabbable"))
             {
                 grabbedObject = hit.collider.gameObject;
+                grabSuccesfull.Invoke();
             }
         }
     }
 
     private void TryRelease()
     {
+        if (grabbedObject != null)
+        {
+            grabReleased.Invoke();
+        }
         grabbedObject = null;
     } 
 
