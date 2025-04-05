@@ -19,7 +19,7 @@ public class CombinedCollider : MonoBehaviour
         bool firstColliderFound = false;
         foreach (Transform child in transform)
         {
-            if (child.TryGetComponent(out Collider c) && c.enabled)
+            if (child.TryGetComponent(out Collider c))
             {
                 if (!firstColliderFound)
                 {

@@ -42,5 +42,9 @@ public class IngredientStack : MonoBehaviour
         ingredient.transform.SetParent(transform);
         ingredient.transform.localPosition = Vector3.zero + Vector3.up * ingredientsInStack.Count * 0.01f;
         OnIngredientAdded.Invoke();
+        if(ingredient.gameObject.TryGetComponent(out Collider collider))
+        {
+            collider.enabled = false;
+        }
     }
 }
