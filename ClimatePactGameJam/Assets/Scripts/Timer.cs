@@ -6,7 +6,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private Image LinearTimerImg;
     private float timeRemaining;
-    [SerializeField] private float maxTime = 5.0f;
+    [SerializeField] private float maxTime;
     [SerializeField] private UnityEvent TimeOver;
     
     void Start()
