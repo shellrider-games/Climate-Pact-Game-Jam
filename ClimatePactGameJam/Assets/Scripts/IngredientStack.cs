@@ -33,11 +33,11 @@ public class IngredientStack : MonoBehaviour
     private void AddIngredient(Ingredient ingredient)
     {
         grabGrabbables.TryRelease();
+        ingredient.CanBeGrabbed = false;
         if (ingredient.gameObject.TryGetComponent(out Rigidbody rb))
         {
             Destroy(rb);
         }
-        ingredient.gameObject.tag = "Ingredient";
         ingredientsInStack.Add(ingredient.Name);
         ingredient.transform.SetParent(transform);
         ingredient.transform.localPosition = Vector3.zero + Vector3.up * ingredientsInStack.Count * 0.01f;

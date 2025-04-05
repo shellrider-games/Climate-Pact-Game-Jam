@@ -4,11 +4,11 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class CombinedCollider : MonoBehaviour
 {
-    private BoxCollider collider;
+    private BoxCollider boxCollider;
 
     private void Awake()
     {
-        collider = GetComponent<BoxCollider>();
+        boxCollider = GetComponent<BoxCollider>();
         UpdateCombinedCollider();
     }
 
@@ -32,8 +32,8 @@ public class CombinedCollider : MonoBehaviour
 
         if (firstColliderFound)
         {
-            collider.center = transform.InverseTransformPoint(combinedBounds.center);
-            collider.size = combinedBounds.size;
+            boxCollider.center = transform.InverseTransformPoint(combinedBounds.center);
+            boxCollider.size = combinedBounds.size;
         }
     }
 }
