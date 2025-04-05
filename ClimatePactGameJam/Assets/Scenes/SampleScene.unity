@@ -274,7 +274,7 @@ MonoBehaviour:
   soundSource1: {fileID: 330585550}
   soundSource2: {fileID: 330585549}
   windSounds:
-  - {fileID: 8300000, guid: ee91eeabe0869422fb30db83866e0aab, type: 3}
+  - {fileID: 8300000, guid: 06e6e68f8bc654c09b3f930e046974eb, type: 3}
   crossfadeDuration: 2
   volume: 0.6
 --- !u!82 &330585549
