@@ -11,10 +11,24 @@ public class RecipeManager : MonoBehaviour
     private void Awake()
     {
         recipes = JsonConvert.DeserializeObject<List<Recipe>>(recipesData.text);
-        foreach (var recipe in recipes)
-        {
-            Debug.Log(recipe);
-        }
     }
     
+    public List<Recipe> PossibleRecipes(List<string> ingredientStack)
+    {
+        List<Recipe> possibleRecipes = new List<Recipe>();
+        foreach (Recipe recipe in recipes)
+        {
+            if (recipe.Stack.Count < ingredientStack.Count) {continue;}
+            bool startEqual = true;
+            for (int i = 0; i < ingredientStack.Count; i++)
+            {
+                if (ingredientStack[i] != recipe.Stack[i])
+                {
+                    startEqual = false;
+                }
+            }
+            if (startEqual){ possibleRecipes.Add(recipe); }
+        }
+        return possibleRecipes;
+    }
 }
