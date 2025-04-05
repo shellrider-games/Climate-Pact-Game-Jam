@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2044959526813174675}
   - component: {fileID: 6258090833765057520}
   - component: {fileID: 5439064170013685348}
+  - component: {fileID: 8772621009854045598}
   m_Layer: 0
   m_Name: Lemon
   m_TagString: Grabbable
@@ -82,6 +83,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &8772621009854045598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2807410165551861058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784da7bef9ac24fe08cd776fc92f06cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Lemon
 --- !u!1001 &154299420492215609
 PrefabInstance:
   m_ObjectHideFlags: 0
