@@ -1130,17 +1130,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: UiPotato
       objectReference: {fileID: 0}
+    - target: {fileID: 1689229724498383859, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3113112233718817671, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 3748950513866365008, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.76
+      value: -6.39
       objectReference: {fileID: 0}
     - target: {fileID: 3748950513866365008, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -1.1
       objectReference: {fileID: 0}
     - target: {fileID: 3748950513866365008, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1193,6 +1197,9 @@ PrefabInstance:
     - {fileID: 38492008029839903, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
     - {fileID: 6624786026125005044, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
     - {fileID: 188009447007423149, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
+    - {fileID: 441703362312056148, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
+    - {fileID: 5839320160093590741, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
+    - {fileID: 5209916746361482886, guid: d87c8a219bde74e2aae5f92cc6a0a658, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1208,6 +1215,10 @@ PrefabInstance:
     - target: {fileID: 489992664302172457, guid: e55fd74d6551448f7b3abb83aa21ff23, type: 3}
       propertyPath: m_Name
       value: UiLemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 489992664302172457, guid: e55fd74d6551448f7b3abb83aa21ff23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8135591826363284778, guid: e55fd74d6551448f7b3abb83aa21ff23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1249,7 +1260,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2793738644212575253, guid: e55fd74d6551448f7b3abb83aa21ff23, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1268,6 +1280,10 @@ PrefabInstance:
     - target: {fileID: 3879688644348698186, guid: 542fb19193f744c9693450648f64573e, type: 3}
       propertyPath: m_Name
       value: UiBreadStack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3879688644348698186, guid: 542fb19193f744c9693450648f64573e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5993905984084024497, guid: 542fb19193f744c9693450648f64573e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1309,7 +1325,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1696846094274249027, guid: 542fb19193f744c9693450648f64573e, type: 3}
+    - {fileID: 4482570589365077415, guid: 542fb19193f744c9693450648f64573e, type: 3}
+    - {fileID: 1816672844988007443, guid: 542fb19193f744c9693450648f64573e, type: 3}
+    - {fileID: 6884194655830751887, guid: 542fb19193f744c9693450648f64573e, type: 3}
+    - {fileID: 556690271610624559, guid: 542fb19193f744c9693450648f64573e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1325,6 +1346,10 @@ PrefabInstance:
     - target: {fileID: 2291609484046317334, guid: a08fc741cb59c40fb83c527d72239c7e, type: 3}
       propertyPath: m_Name
       value: UiCucumber
+      objectReference: {fileID: 0}
+    - target: {fileID: 2291609484046317334, guid: a08fc741cb59c40fb83c527d72239c7e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2480059448775021856, guid: a08fc741cb59c40fb83c527d72239c7e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1366,7 +1391,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 607384502263462012, guid: a08fc741cb59c40fb83c527d72239c7e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1388,7 +1414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1473600274112453892, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -0.98
       objectReference: {fileID: 0}
     - target: {fileID: 1473600274112453892, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1426,7 +1452,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: UiPancake
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2630758900369930439, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2333155601247942666, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
+    - {fileID: 4632197192574070975, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
+    - {fileID: 8268738460328081127, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
+    - {fileID: 792882316184864781, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
+    - {fileID: 1817020278515899120, guid: 9693bc53a7f904d14b6b56068483bf9b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1483,7 +1518,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: UiAvocado
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3535510440686215939, guid: 684bed33ed1734a319683f70d04f2a03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 334477639868656320, guid: 684bed33ed1734a319683f70d04f2a03, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1502,6 +1542,10 @@ PrefabInstance:
     - target: {fileID: 3123100648583482322, guid: 33dd76dae11bb42da9f5542d280197a8, type: 3}
       propertyPath: m_Name
       value: UiBread
+      objectReference: {fileID: 0}
+    - target: {fileID: 3123100648583482322, guid: 33dd76dae11bb42da9f5542d280197a8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8901728569280142275, guid: 33dd76dae11bb42da9f5542d280197a8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1543,7 +1587,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7643307288550790799, guid: 33dd76dae11bb42da9f5542d280197a8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
