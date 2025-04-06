@@ -7,7 +7,9 @@ public class IngredientStack : MonoBehaviour
 {
     [SerializeField] private float ingredientGap;
     [SerializeField] private UnityEvent OnIngredientAdded;
-    List<string> ingredientsInStack = new List<string>();
+    private List<string> ingredientsInStack = new List<string>();
+    public List<string> IngredientsInStack => ingredientsInStack;
+    
     private RecipeManager recipeManager;
     private GrabGrabbables grabGrabbables;
 

@@ -77,4 +77,16 @@ public class OrderManager : MonoBehaviour
         string dishName = recipeManager.GetRandomRecipe().Name;
         return new Order(dishName, timeToCompleteOrder);
     }
+
+    public void TryCompleteOrder(IngredientStack dish, int id)
+    {
+        if(!orders[id].Active){ return; }
+        if (recipeManager.CheckRecipe(dish.IngredientsInStack, orders[id].Name))
+        {
+            Destroy(dish.gameObject);
+            orders[id].Active = false;
+            UpdateOrderDisplays();
+            Debug.Log("Successfully completed order");
+        }
+    }
 }
