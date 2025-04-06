@@ -8,7 +8,7 @@ public class CompostFood : MonoBehaviour
     
     void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.tag == "Grabbable")
+            if (collision.gameObject.tag == "Grabbable" || collision.gameObject.tag == "Ingredient")
             {
                 Destroy(collision.gameObject);
                 _unityEvent.Invoke();
