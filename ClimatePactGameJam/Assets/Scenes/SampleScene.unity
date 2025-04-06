@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 323846372}
   - component: {fileID: 323846371}
   - component: {fileID: 323846375}
+  - component: {fileID: 323846376}
   m_Layer: 0
   m_Name: ServeZone2
   m_TagString: Untagged
@@ -419,6 +420,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &323846376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323846370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0ba9a6a67a4c42877cce0d2e21065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: f7bcc95a2123b413f9bfe1cc33dcc20d, type: 3}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +919,7 @@ GameObject:
   - component: {fileID: 463730782}
   - component: {fileID: 463730781}
   - component: {fileID: 463730785}
+  - component: {fileID: 463730786}
   m_Layer: 0
   m_Name: ServeZone1
   m_TagString: Untagged
@@ -1029,6 +1044,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &463730786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463730780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0ba9a6a67a4c42877cce0d2e21065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: f7bcc95a2123b413f9bfe1cc33dcc20d, type: 3}
 --- !u!1001 &475336997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1421,6 +1449,7 @@ GameObject:
   - component: {fileID: 1041486987}
   - component: {fileID: 1041486986}
   - component: {fileID: 1041486990}
+  - component: {fileID: 1041486991}
   m_Layer: 0
   m_Name: ServeZone0
   m_TagString: Untagged
@@ -1545,6 +1574,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1041486991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041486985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0ba9a6a67a4c42877cce0d2e21065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: f7bcc95a2123b413f9bfe1cc33dcc20d, type: 3}
 --- !u!1 &1342581909
 GameObject:
   m_ObjectHideFlags: 0
