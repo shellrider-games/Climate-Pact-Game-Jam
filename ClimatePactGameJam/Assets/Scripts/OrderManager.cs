@@ -16,6 +16,7 @@ public class OrderManager : MonoBehaviour
     [SerializeField] private MoneyManager moneyManager;
     [SerializeField] private RecipeManager recipeManager;
     [SerializeField] private OrderDisplay[] orderDisplays;
+    [SerializeField] private ImageRepository imageRepository;
     
     [Header("Events")]
     [SerializeField] private UnityEvent onOrderComplete; 
@@ -68,6 +69,7 @@ public class OrderManager : MonoBehaviour
             orders[i] = order;
             orders[i].Active = true;
             orderDisplays[i].UpdateOrderText(orders[i].Name);
+            orderDisplays[i].UpdateOrderImage(imageRepository.ImageDictionary[orders[i].Name]);
             break;
         }
     }
