@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4223373755778493235}
   - component: {fileID: 8780258621273509610}
   - component: {fileID: 7265587529520175367}
+  - component: {fileID: 7940431259024366886}
   m_Layer: 0
   m_Name: SourCream
   m_TagString: Ingredient
@@ -82,6 +83,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.053019285, y: 0.040259838, z: 0.073545866}
   m_Center: {x: -0.0005366206, y: 0.017964572, z: -0.00003473088}
+--- !u!114 &7940431259024366886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7056379371070829520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784da7bef9ac24fe08cd776fc92f06cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: SourCream
+  CanBeGrabbed: 0
 --- !u!1001 &5172435045748281193
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,5 +7,24 @@
       "Avocado",
       "Cucumber"
     ]
+  },
+  {
+    "Name" : "Savory Hummus Pancakes with Avocado and Sour Cream",
+    "Stack" : [
+      "Pancake",
+      "Pancake",
+      "Pancake",
+      "Hummus",
+      "Avocado",
+      "SourCream"
+    ]
+  },
+  {
+    "Name" : "Loaded Tomato Sweet Potato",
+    "Stack" : [
+      "SweetPotato",
+      "SourCream",
+      "Tomato"
+    ]
   }
 ]
