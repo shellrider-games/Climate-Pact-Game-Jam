@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5993905984084024497}
   - component: {fileID: 5211066592572542266}
   m_Layer: 0
-  m_Name: UiBread
+  m_Name: UiBreadDish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
