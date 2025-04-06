@@ -10,6 +10,10 @@ public class OrderManager : MonoBehaviour
     [SerializeField][Range(0,120f)] private float timeToCompleteOrder = 30f;
     [SerializeField][Range(0,120f)] private float timeBetweenOrders = 30f;
     [SerializeField][Range(0,10f)] private float timeBetweenOrdersVariance = 7f;
+    
+    [SerializeField][Range(0, 50)] private int orderBasePrice = 10;
+    [SerializeField][Range(0, 50)] private int orderMaximumTip = 5;
+    
     [SerializeField] private MoneyManager moneyManager;
     [SerializeField] private RecipeManager recipeManager;
     [SerializeField] private OrderDisplay[] orderDisplays;
@@ -87,7 +91,10 @@ public class OrderManager : MonoBehaviour
             Destroy(dish.gameObject);
             orders[id].Active = false;
             UpdateOrderDisplays();
-            moneyManager.GainMoney(3);
+            moneyManager.GainMoney(
+                orderBasePrice + 
+                        Mathf.FloorToInt(orders[id].Timer / orders[id].TotalTime * orderMaximumTip)
+                );
             if (orders.Count(o => o.Active) == 0)
             {
                 TryAddOrder(GenerateOrder());
