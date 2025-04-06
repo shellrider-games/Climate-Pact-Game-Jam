@@ -1,8 +1,7 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 public class OrderManager : MonoBehaviour
@@ -17,6 +16,10 @@ public class OrderManager : MonoBehaviour
     [SerializeField] private MoneyManager moneyManager;
     [SerializeField] private RecipeManager recipeManager;
     [SerializeField] private OrderDisplay[] orderDisplays;
+    
+    [Header("Events")]
+    [SerializeField] private UnityEvent onOrderComplete; 
+    
     private Order[] orders;
     private float nextOrderTimer;
     
@@ -91,6 +94,7 @@ public class OrderManager : MonoBehaviour
             Destroy(dish.gameObject);
             orders[id].Active = false;
             UpdateOrderDisplays();
+            onOrderComplete.Invoke();
             moneyManager.GainMoney(
                 orderBasePrice + 
                         Mathf.FloorToInt(orders[id].Timer / orders[id].TotalTime * orderMaximumTip)
