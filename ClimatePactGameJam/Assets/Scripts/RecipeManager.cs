@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Linq;
 using DataObjects;
+using JetBrains.Annotations;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -32,8 +34,28 @@ public class RecipeManager : MonoBehaviour
         return possibleRecipes;
     }
 
+    [CanBeNull]
+    public Recipe CheckCompleteRecipe(List<string> ingredientStack)
+    {
+        foreach (var recipe in recipes)
+        {
+            if (recipe.Stack.SequenceEqual(ingredientStack))
+            {
+                return recipe;
+            }
+        }
+        return null;
+    }
+
     public Recipe GetRandomRecipe()
     {
         return recipes[Random.Range(0, recipes.Count)];
+    }
+
+    public bool CheckRecipe(List<string> ingredientStack, string recipeName)
+    {
+        Recipe recipe = CheckCompleteRecipe(ingredientStack);
+        if (recipe == null) { return false; }
+        return recipe.Name == recipeName;
     }
 }
