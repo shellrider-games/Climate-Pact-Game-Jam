@@ -59,6 +59,7 @@ public class OrderManager : MonoBehaviour
             if (orders[i].Active) { continue;}
             orders[i] = order;
             orders[i].Active = true;
+            orderDisplays[i].UpdateOrderText(orders[i].Name);
             break;
         }
     }
