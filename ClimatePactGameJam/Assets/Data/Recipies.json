@@ -9,12 +9,11 @@
     ]
   },
   {
-    "Name" : "Savory Hummus Pancakes with Avocado and Sour Cream",
+    "Name" : "Savory Pancakes with Avocado and Sour Cream",
     "Stack" : [
       "Pancake",
       "Pancake",
       "Pancake",
-      "Hummus",
       "Avocado",
       "SourCream"
     ]

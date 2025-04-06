@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2583036067056724585}
   - component: {fileID: 7930126775581106630}
+  - component: {fileID: 8989414921150469181}
+  - component: {fileID: 3645097305471117398}
   m_Layer: 0
   m_Name: Composter
   m_TagString: Untagged
@@ -52,8 +54,48 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.33221555, y: 0.06934148, z: 1}
-  m_Center: {x: 0.001060009, y: 0.2257748, z: 0}
+  m_Size: {x: 0.33221555, y: 0.03571868, z: 0.3334779}
+  m_Center: {x: 0.001060009, y: 0.2089634, z: 0.0009889007}
+--- !u!114 &8989414921150469181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859047316727156224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f6c50c65d684cb7afe53211049bc86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3645097305471117398}
+        m_TargetAssemblyTypeName: PlaySoundOnEvent, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3645097305471117398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859047316727156224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0ba9a6a67a4c42877cce0d2e21065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: d10d7c3cc3eea419fb6c59737af36699, type: 3}
 --- !u!1001 &4567476379996438234
 PrefabInstance:
   m_ObjectHideFlags: 0
