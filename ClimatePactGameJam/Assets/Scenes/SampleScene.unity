@@ -2427,6 +2427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1785418775}
   - component: {fileID: 1785418774}
+  - component: {fileID: 1785418776}
   m_Layer: 0
   m_Name: OrderManager
   m_TagString: Untagged
@@ -2459,7 +2460,19 @@ MonoBehaviour:
   - {fileID: 1659318214}
   onOrderComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1785418776}
+        m_TargetAssemblyTypeName: PlaySoundOnEvent, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1785418775
 Transform:
   m_ObjectHideFlags: 0
@@ -2475,6 +2488,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1628141879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785418776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785418773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c0ba9a6a67a4c42877cce0d2e21065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: dd003b4bda7ca45b2bec86d4a1b11a67, type: 3}
 --- !u!114 &1835074899 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7310517727497338077, guid: 7107f7d38d4c34b94a5f0258d18506d2, type: 3}
